@@ -4,7 +4,7 @@
 
 This project focuses on developing an Interactive Solar System using Blender and Python.
 
-The project will combine 3D modeling, animation concepts, and Python programming to create a desktop application that demonstrates the motion of planets around the Sun.
+The project combines 3D modeling, animation, and Python programming to create a desktop application that demonstrates the motion of planets around the Sun.
 
 ---
 
@@ -32,23 +32,25 @@ The objective of this project is to understand the workflow of integrating Blend
 - Organized the project folder structure.
 - Set up the Python development environment.
 - Created the initial project files.
-- Preparing Blender assets for implementation.
+- Designed the Solar System in Blender.
+- Added the Sun, planets, and orbital paths.
+- Applied basic materials and textures.
+- Saved the Blender project for Python integration.
 
 ---
 
 ## Upcoming Tasks
 
-- Create the Sun model.
-- Create planetary models.
-- Apply basic materials.
-- Export models in `.glb` format.
+- Export Blender models in `.glb` format.
 - Import models into Ursina Engine.
 - Implement planet rotation.
 - Implement planetary revolution.
-- Add basic user controls.
+- Add camera controls.
+- Add basic user interaction.
+- Test the application and finalize the project.
 
 ---
 
 ## Project Goal
 
-To develop an interactive Solar System simulation by combining Blender 3D modeling and Python programming using the Ursina Engine.
+To develop an interactive Solar System simulation by combining Blender 3D modeling, animation, and Python programming using the Ursina Engine.
