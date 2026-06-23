@@ -41,11 +41,24 @@ The objective of this project is to understand the workflow of creating 3D asset
 ## Project Structure
 
 ```
-interactive-solar-system/
+interactive-solar-system
 │
 ├── models/
+│   ├── solar_system.blend
+│   ├── sun.glb
+│   ├── mercury.glb
+│   ├── venus.glb
+│   ├── earth.glb
+│   ├── mars.glb
+│   ├── jupiter.glb
+│   ├── saturn.glb
+│   ├── uranus.glb
+│   └── neptune.glb
+│
 ├── textures/
+│
 ├── screenshots/
+│
 ├── app.py
 ├── README.md
 └── requirements.txt
