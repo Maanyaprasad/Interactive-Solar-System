@@ -5,6 +5,10 @@ app = Ursina()
 
 window.title = "Interactive Solar System"
 
+#------------------------------------------------------------------
+# ---------------- DEEP BLACK STAR SPACE BACKGROUND----------------
+#------------------------------------------------------------------
+
 Sky(texture='textures/space.jpg')
 EditorCamera()
 
@@ -22,7 +26,7 @@ class Planet(Entity):
 
         self.orbit_radius = orbit_radius
         self.orbit_speed = orbit_speed
-        self.base_speed = orbit_speed      # NEW
+        self.base_speed = orbit_speed      
         self.angle = 0
 
     def update(self):
@@ -33,8 +37,9 @@ class Planet(Entity):
 
         self.rotation_y += 30 * time.dt
 
-
-# ---------------- Sun ----------------
+#------------------------------------------------
+# ---------------- SUN MODEL --------------------
+#------------------------------------------------
 
 sun = Entity(
     model='sphere',
@@ -42,7 +47,9 @@ sun = Entity(
     scale=2.5
 )
 
-# --------------- Planets -------------
+#----------------------------------------------
+# --------------- PLANETS ---------------------
+#----------------------------------------------
 
 mercury = Planet('textures/2k_mercury.jpg',3,60,0.20)
 venus = Planet('textures/2k_venus.jpg',4,45,0.35)
@@ -52,6 +59,9 @@ jupiter = Planet('textures/2k_jupiter.jpg',9,20,0.80)
 
 saturn = Planet('textures/2k_saturn.jpg',12,16,0.70)
 
+#-----------------------------------------------
+#----------------- SATURN RING -----------------
+#-----------------------------------------------
 saturn_ring = Entity(
     parent=saturn,
     model='quad',
@@ -64,8 +74,9 @@ saturn_ring = Entity(
 uranus = Planet('textures/2k_uranus.jpg',15,12,0.55)
 neptune = Planet('textures/2k_neptune.jpg',18,10,0.55)
 
-
-# ---------- Speed Control ----------
+#------------------------------------
+# ---------- SPEED CONTROL ----------
+#------------------------------------
 
 speed_multiplier = 1.0
 
@@ -106,8 +117,9 @@ def input(key):
     for planet in planets:
         planet.orbit_speed = planet.base_speed * speed_multiplier
 
-
+#-----------------------------
 # ---------- Update ----------
+#-----------------------------
 
 def update():
 
